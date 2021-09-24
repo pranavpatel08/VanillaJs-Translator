@@ -6,7 +6,23 @@ var translateInput = document.querySelector("#translate-input");
 
 var translateOutput = document.querySelector("#translate-output");
 
-function buttonClickHandler() {
-    translateOutput.innerText = "bananana " + translateInput.value;
+var url = "https://api.funtranslations.com/translate/minion.json"
 
+function buttonClickHandler(event) {
+    console.log("button clicked");
+    var input = translateInput.value;
+    var finalURL = constructURL(input);
+    console.log(finalURL);
+    fetch(finalURL)
+        .then(response => response.json())
+        .then(json => {
+            translateOutput.innerText = json.contents.translated;
+        })
+        .catch((e) => alert("some error occured! try again later"))
+    
+}
+
+function constructURL(inputText) {
+    var encodedURI = encodeURI(inputText);
+    return `${url}?text=${encodedURI}`;
 }
