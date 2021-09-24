@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 :root {
-    --primary: #F2C94C;
+    --primary: #bb1717;
     --black: #333333;
     --width-break:600px
 }
 
 body {
     margin: 0;
-    font-family: 'Kalam', cursive;
+    font-family: 'MedievalSharp', cursive;
     color: #333333;
-    background-color: black;
 }
 
 nav {
@@ -22,6 +21,8 @@ nav {
     text-align: center;
     font-size: 1.5rem; 
     padding: 0.1rem;
+    color: blanchedalmond;
+
 }
 
 main {
@@ -35,8 +36,6 @@ textarea {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    color: cornsilk;
-    background-color: black;
     padding: 1rem;
     border-radius: .5rem;
     min-height: 20vh;
@@ -50,12 +49,13 @@ button {
     border: none;
     margin: 1rem 0rem;
     padding: 1rem 2rem;
-    font-family: 'Kalam', cursive;
+    font-family: 'MedievalSharp', cursive;
     font-size: large;
 }
 #translate-button{
     border-radius: 2rem;
     margin: 2rem auto;
+    color: blanchedalmond;
 }
 
 
@@ -64,9 +64,7 @@ button {
     width: 100%;
     min-height: 10vh;
     max-height: 20vh;
-    color: cornsilk;
-    background-color: black;
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 1rem; 
     font-size: large;
     border-radius: 0.5rem;
@@ -80,6 +78,7 @@ footer {
     padding: 0.5rem;
     background-color: var(--primary);
     text-align: center;
+    color: blanchedalmond;
 }
 
 footer p {
