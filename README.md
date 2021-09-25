@@ -1,5 +1,5 @@
 # VanillaJs app
-An app to tanslate to bananananan language
+An app to tanslate to bananananan language. [Try it out now!](https://banana-hahaha.netlify.app/)
 
 <br>
 
